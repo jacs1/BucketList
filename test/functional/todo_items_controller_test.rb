@@ -40,6 +40,10 @@ class TodoItemsControllerTest < ActionController::TestCase
     end
   end
 
+  context "POST to create" do 
+    setup do 
+      xhr :post, :create, :todo_item => { :name => "Drink a pickleback", :location => "50 Broadway New York, NY" }
+
 end
 end
 end
