@@ -1,19 +1,11 @@
-<div class="row">
-	<div class="destination">
-		<h3><%= destination.name %></h3>
+<div class="destinations">
 
-		<%= image_tag destination.image_url, :width => 280 %>
-	</div>
-	<p>
-		<%= link_to 'Sort By Title', _path %>
-	</p>
+	<h3><%= destination.name %></h3>
+	<img src="<%= destination.image_url %>" />
+</div>
 
-	<div class="items-<%=destination.id%>">
-		<% destinaion.todo_items.order(@order).each do |i| %>
-		<%= render i %>
-		<% end %> 
-	</div>
-
-	<%= render :partial => 'todo_items/form', :locals => { :destination => destination } %>
-	 </div>
-	</div>
+<div class="todo_items">
+	<% destination.todo_items.each do |buttplug| %>
+	<%= render buttplug %>
+	<% end %>
+</div>
