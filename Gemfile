@@ -7,6 +7,7 @@ gem 'rails', '3.2.13'
 
 gem 'sqlite3'
 gem 'geocoder'
+gem 'pry-rails'
 
 group :test do
 	gem 'shoulda'
