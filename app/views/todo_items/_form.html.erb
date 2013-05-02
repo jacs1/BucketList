@@ -1,4 +1,32 @@
 
+<div class = "todo_form">
+
+		<h3>New To Do</h3>
+<%= form_for(TodoItem.new(:destination_id => destination_id), :remote => true) do |f| %>
+<%= f.hidden_field :destination_id %>
 
 
-<!-- (:todo_item_id => item.id) -->
+
+
+<div class = "field">
+<p>Name</p>
+		<%= f.text_field :name %>
+
+</div>
+
+<div class = "field">
+	<p>Location</p>
+		<%= f.text_field :location %>
+
+</div>
+<br/>
+<div class = "field">
+		<%= f.submit  %>
+
+</div>
+<br/>
+
+<% end %>
+
+
+</div>
