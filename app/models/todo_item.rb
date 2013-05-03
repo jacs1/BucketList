@@ -1,5 +1,5 @@
 class TodoItem < ActiveRecord::Base
-  attr_accessible :completed, :name, :latitude, :longitude
+  attr_accessible :completed, :name, :location, :latitude, :longitude, :destination_id
 
   # validates :location, :presence => true
 
