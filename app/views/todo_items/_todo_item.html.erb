@@ -1,5 +1,8 @@
+<link rel="stylesheet" type="text/css" href="/todo_items.css" />
+
 <div class="todo-item <%= todo_item.completed? ? 'completed' : '' %>">
 	<h3><%= todo_item.name %></h3>
+	<%= link_to image_tag('like.jpg'), like_todo_item_path(todo_item.destination.id, todo_item.id), :remote => true, :method => :post, :class => 'like' %>
 
 
 <div class="comments<%= todo_item.id %>">
@@ -7,9 +10,7 @@
 		<% todo_item.comments.each do |comment| %>
 		<%= render comment%>
 		<% end %>
-		<div class="like">
-		<%= link_to image_tag('like.jpg'), like_todo_item_path(todo_item.destination.id, todo_item.id), :remote => true, :method => :post %>
-		</div>
+		
 </div>
 
  
