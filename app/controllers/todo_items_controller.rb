@@ -2,24 +2,13 @@ class TodoItemsController < ApplicationController
 
 	def index 
 		@items = TodoItem.all
-		# @destinations = Destination.all
 
-		# o = params[:order] || :created_at 
-		# @destinations = Destination.order(o).all 
-		# @order = :latitude 
-		# @all_items = TodoItem.all 
-
-		# respond_to do |format|
-		# 	format.html
-		# 	format.js{
-
-		# 	}
 	end
 
 	def create
 		@item = TodoItem.new(params[:todo_item])
 		@item.save!
-		render @item
+		render :template => 'todo_items/create', :locals=> { :todo_item => @todo_item }, :content_type => 'text/javascript'
 
 	end
 

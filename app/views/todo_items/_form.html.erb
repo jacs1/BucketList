@@ -1,32 +1,25 @@
+<div class="item-form">
+    <%= form_for TodoItem.new do |f| %>
+    <%= f.hidden_field :longitude %>
+    <%= f.hidden_field :latitude %>
 
-<div class = "todo_form">
+            <div class="field">
+                <%= f.label :destination %>
+                <%= f.text_field :destination_id %>
+            </div>
 
-		<h3>New To Do</h3>
-<%= form_for(TodoItem.new(:destination_id => destination_id), :remote => true) do |f| %>
-<%= f.hidden_field :destination_id %>
+            <div class="field">
+                <%= f.label :name %>
+                <%= f.text_field :name %>
+            </div>
 
+            <div class="field">
+                <%= f.label :location %>
+                <%= f.text_field :location %>
+            </div>
 
-
-
-<div class = "field">
-<p>Name</p>
-		<%= f.text_field :name %>
-
-</div>
-
-<div class = "field">
-	<p>Location</p>
-		<%= f.text_field :location %>
-
-</div>
-<br/>
-<div class = "field">
-		<%= f.submit  %>
-
-</div>
-<br/>
-
-<% end %>
-
-
+            <div class="field">
+                <%= f.submit %>
+            </div>
+    <% end %>
 </div>
