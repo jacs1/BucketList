@@ -6,9 +6,12 @@
 
 		<% todo_item.comments.each do |comment| %>
 		<%= render comment%>
-		
 		<% end %>
-	</div>
+		<div class="like">
+		<%= link_to image_tag('like.jpg'), like_todo_item_path(todo_item.destination.id, todo_item.id), :remote => true, :method => :post %>
+		</div>
+</div>
+
  
 
 

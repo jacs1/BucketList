@@ -19,6 +19,7 @@ class DestinationsController < ApplicationController
 	end
 
 
+
 		# render :partial => 'destinations/form', :locals => { :destination => @destination }, :content_type => 'text/html'
 
 end

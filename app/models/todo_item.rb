@@ -8,8 +8,9 @@ class TodoItem < ActiveRecord::Base
   # makes sure the location is there first, and if everything is there then saves
 
   has_many :comments
+  has_many :likes
   belongs_to :destination
-
+  belongs_to :user
 #   def my_cool_geocoding_method
 #   	"#{self.location}#{destination.name}"
 #   end
