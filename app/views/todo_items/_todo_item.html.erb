@@ -12,9 +12,8 @@
 		<% end %>
 		
 </div>
-
- 
-
+<p><%= "#{todo_item.likes.count} Likes" %></p>
+				
 
 	<%= render :partial => 'comments/form', :locals => { :item => todo_item } %>
 

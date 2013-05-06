@@ -6,10 +6,15 @@
 // 	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 // }
 
+
+body{
+	background-color:#00FFFF;
+}
+
 .like img{
 	width:35px;
 	height:35px;
-	float:left;
+	text-align: center;
 	
 
 }
@@ -17,6 +22,7 @@
 .comments{
 	height:35px;
 	width:35px;
+	text-align: center;
 
 
 }
@@ -24,6 +30,14 @@
 .container {
 	position:absolute;
 	top:10em;
+	border:2px solid #999;
+	background-color: #E8E2E2;
+	border-radius:50px;
+	width:640px;
+	text-align: center;
+
+	
+	
 }
 
 #search-box{
@@ -39,7 +53,8 @@
 	border-radius:20px;
 	margin-right:60px;
 	margin-top:60px;
-	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+
+
 }
 
 .todo-item{
@@ -51,24 +66,46 @@
 	top: 10em;
 	width:400px;
 	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	text-align: center;
+	margin-left:90px;
+	
+}
+h3{
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	
 }
 .destinations{
 	text-align: center;
-	top: 20em;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	
+	
+
 }
 .destinations img{
 	height:400px;
 	width:600px;
 	border:#C93939 20px;
 	box-shadow: 10px 10px 5px #888;
-	
-	top:20em;
-	bottom:20em;
-}	
+	float:left;
+	margin-bottom:50px;
+	margin-left:5px;
+
+
+.banner {
+	position:absolute;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	margin-bottom:15px;
+	text-align:center;
+}
+
+}
  
 h1{
-	font-family: "Brush Script MT", cursive;
+	
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;;
+	margin-left:15px;
+	margin-bottom:15px;
+	text-align: center;
 	
 }
 
